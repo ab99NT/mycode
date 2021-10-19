@@ -6,43 +6,43 @@ def main():
 
     count = 0
 
-    while count < 3
+    while count < 3:
+       if usr_country == "":
+           usr_country = input("Please enter a country to find it's capital:")
 
+           count = count + 1
+       else:
 
-
-    if usr_country == "":
-       print("nice try")
-    else:
-       print("thanks for the value")
+           count = 4
 
 
     # Generate a dictionary from country list file.
-    countries = {}
+           countries = {}
 
-    try:
-        country_data = open('countries.txt', 'r')
+           try:
+               country_data = open('countries.txt', 'r')
 
 #        print("made it here")
-    except IOError:
-        print("Country list file could not be opened.")
-        quit(
-                )
-    try:
-        for each_line in country_data:
-            (country_name, capital_city) = each_line.split(':', 1)
-            country_name = country_name.strip()
-            capital_city = capital_city.strip()
-            countries[country_name] = capital_city  # "Japan": "Tokyo"
-        country_data.close()
+           except IOError:
+               print("Country list file could not be opened.")
+               quit(
+                       )
+           try:
+               for each_line in country_data:
+                   (country_name, capital_city) = each_line.split(':', 1)
+                   country_name = country_name.strip()
+                   capital_city = capital_city.strip()
+                   countries[country_name] = capital_city  # "Japan": "Tokyo"
+               country_data.close()
 #        print( countries.values() )
 
 
 #        return countries
 
-    except ValueError:
-        pass
+           except ValueError:
+               pass
 
 #        print( countries.keys() )
-    print(f" The capital City of {usr_country} is {countries.get(usr_country)}" )
+           print(f" The capital City of {usr_country} is {countries.get(usr_country)}" )
 
 main()
