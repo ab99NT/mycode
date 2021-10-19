@@ -2,7 +2,9 @@
 
 def main():
 
-    usr_country = input("Please enter a country to find it's capital:")
+    # Program to return a capital for the given country input
+
+    usr_country = input("Please enter a country to find it's capital:\n>")
 
     count = 0
 
@@ -36,13 +38,10 @@ def main():
                country_data.close()
 #        print( countries.values() )
 
-
-#        return countries
-
            except ValueError:
                pass
 
 #        print( countries.keys() )
-           print(f" The capital City of {usr_country} is {countries.get(usr_country)}" )
+           print(f"The capital City of {usr_country} is {countries.get(usr_country)}" )
 
 main()
