@@ -11,7 +11,7 @@ plt.rcdefaults()
 fig, ax = plt.subplots()
 
 # Example data
-people = ('Andrew', 'Dick', 'Harry', 'Slim', 'Jim')
+people = ('Andrew', 'Julia', 'Dave', 'Kurt', 'Alex', 'Marlon', 'Seth', 'Tim')
 y_pos = np.arange(len(people))
 performance = 3 + 10 * np.random.rand(len(people))
 error = np.random.rand(len(people))
@@ -26,7 +26,7 @@ ax.set_title('How fast do you want to go today?')
 plt.show()
 
 # SAVE the graph locally
-plt.savefig("/home/student/mycode/graphing/horizontalbar.png")
+plt.savefig("/home/student/mycode/graphing/classhorizontalbar.png")
 # Save to "~/static"
-plt.savefig("/home/student/static/horizontalbar.png")
+plt.savefig("/home/student/static/classhorizontalbar.png")
 print("Graph created.")
