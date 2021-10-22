@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 # imports from cheadice.py (this is in the local directory)
-from cheatdice import Player
-from cheatdice import Cheat_Swapper
-from cheatdice import Cheat_Loaded_Dice
+from cheatdice2 import Player
+from cheatdice2 import Cheat_Swapper
+from cheatdice2 import Cheat_Loaded_Dice
 
 def main():
 

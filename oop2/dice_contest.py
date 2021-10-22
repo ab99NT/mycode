@@ -3,7 +3,7 @@
    Running a simulation with our classes"""
 
 # import our classes
-from cheatdice import *
+from cheatdice2 import *
 
 def main():
     """called at runtime"""
