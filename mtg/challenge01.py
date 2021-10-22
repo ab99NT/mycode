@@ -33,9 +33,10 @@ def main():
     with open("resp_text.txt", "w") as file:
         file.write(resp.text)
 
-    #print(cards)
 
+    print(cards)
 
+    
 
 if __name__ == "__main__":
     main()
